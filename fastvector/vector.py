@@ -83,8 +83,7 @@ class VectorND:
         """
         if 0 <= idx < len(self.values):
             return self.values[idx]
-        else:
-            raise IndexError("Invalid index!")
+        raise IndexError("Invalid index!")
 
     def __setitem__(self, idx: int, val: Number) -> None:
         """Set the vector item at index *idx*.
